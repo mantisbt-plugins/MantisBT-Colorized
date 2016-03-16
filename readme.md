@@ -5,12 +5,15 @@ Just another theme for [Mantis BugTracker](http://www.mantisbt.org/), the free w
 This style uses the magic of CSS to transform in a new style - simple, fast and useful, without images, pure css.
 
 ### Screenshots
- * Buglist View
-![Buglist View](/assets/screenshot-1.png "Buglist")
+![Buglist View](assets/screenshot-1.png "Buglist")
 
- * [Screenshot of the Issue](/assets/screenshot-2.png "Issue")
+ * [Buglist View](assets/screenshot-1.png "Buglist")
+ * [Screenshot of a Issue](assets/screenshot-2.png "Issue")
 
 ### Installation
+
+#### Normal
+
  1. Download
  2. Unpack the package
  3. Create a folder: `<mantis-root>/colorized`
@@ -18,8 +21,19 @@ This style uses the magic of CSS to transform in a new style - simple, fast and 
  5. Add the following line to your `config_inc.php` to change the css file included into MantisBT:
 
 ```php
-	$g_css_include_file = "../MantisBT-Colorized/colorized.css";
+	$g_css_include_file = "/colorized/colorized.css";
 ```
+
+#### Using the Mantis Theme Manager
+
+Using the [Mantis theme manager](https://github.com/TimPietrusky/MantisThemeManager), the install options are a little different:
+
+ 1. Download
+ 2. Unpack the package
+ 3. Copy all the files into `<mantis-root>/css/themes/colorized`.
+ 4. Rename `colorized.css` into `default.css` or use a symlink. This step allows the Mantis theme manager to load the new theme.
+ 5. Copy `assets/screenshot-1.png` to `colorized.png`.  This step sets up a preview for the Mantis theme manager configuration.
+ 6. Go to the plugins configuration, load the Mantis theme manager configuration, and choose colorized.
 
 ### Status Colors
 If you will also use the same colors for your status graph, then copy the follow snippet in your `config_inc.php`
@@ -41,11 +55,8 @@ You can also use the plugin [Chosen for MantisBT](https://github.com/bueltge/Cho
 # Other Notes
 
 ### License
-Good news, this script is free for everyone! Since it's released under [the MIT](https://github.com/bueltge/MantisBT-Colorized/blob/MantisVersion1.3.x/LICENSE.txt).
+Good news, this script is free for everyone! Since it's released under [the MIT](https://github.com/bueltge/MantisBT-Colorized/blob/master/LICENSE.txt).
 But if you enjoy this style, you can thank me and leave a [donation](http://bueltge.de/wunschliste/) for the time I've spent writing and supporting this project. And I really don't want to know how many hours of my life this plugin has already eaten ;)
-
-### Changelog
-Read the separate [changelog file.](https://github.com/bueltge/MantisBT-Colorized/blob/master/CHANGELOG.md)
 
 ### Contact & Feedback
 This script is designed and developed by me ([Frank Bültge](http://bueltge.de)), [G+ Page](https://plus.google.com/111291152590065605567/about?rel=author)
