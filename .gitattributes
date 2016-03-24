@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 * text eol=lf
 *.jpg -text
 *.png -text
+=======
+* text eol=lf
+>>>>>>> 9d40dc7abf69001dac0b0e63b1bd522b5c49370a

@@ -1,41 +1,56 @@
 /**
- * Title:   Navigation, Menu and Buttons forColorized, a MantisBT Stylesheet
+ * Title:   Navigation, Menu and Buttons for Colorized, a MantisBT Stylesheet
  * Author:  Frank Bültge
  * Contact: frank@bueltge.de
  * URL:     https://github.com/bueltge/MantisBT-Colorized
  * 
- * Description: Navigation, Menu and Buttons for Colorized theme
+ * Description: Navigation, Menu and Buttons for Colorized theme, Version >= 1.3*
  * 
- * @since   2009/02
- * @version 2015/03/02
- * @author  fb
+ * @since   2009-04
+ * @version 2016-03-16
+ * @author  Frank Bültge <frank@bueltge.de>
  */
+
+/**
+ * @section Information bar, inlcude feed and project selector
+ */
+.info-bar {
+	margin: 0.1em 0 1em 0;
+}
 
 /**
  * @section Navigation, menu
  */
-td.menu {
+.main-menu ul li {
+	padding: 0 .75em .1em .8em;
+	line-height: 1.9;
+}
+.main-menu ul li a {
 	background: #f3f3f3;
 	width: 100%;
-	padding: .7em;
+	padding: .75em;
 	border-radius: 0.2em;
 }
 
-td.menu a:first-of-type {
-	margin: 0 !important;
+.main-menu ul li > a#logout-link {
+	border-right: 1px solid #bababa;
 }
 
-td.menu a {
+.main-menu ul li a {
 	margin: 0 0 0 -10px !important;
 }
 
+.main-menu div#bug-jump {
+	padding: 7px 5px 0 0;
+}
+
 select {
-	padding: 0.4em;
-	border: 1px solid #d4d4d4;
+	padding: .2em .25em .25em .25em;
+	border: 1px solid #bababa;
 	margin: 0;
 	text-decoration: none;
 	text-shadow: 1px 1px 0 #fff;
-	font:11px/normal sans-serif;
+	font-size: 11px
 	color: #333;
 	outline: none;
 	background-color: #ececec;
@@ -52,17 +67,17 @@ select {
 	*display: inline;
 }
 
-input, textarea, td.menu a {
+input, textarea, .main-menu ul li a {
 	position: relative;
 	overflow: visible;
 	display: inline-block;
 	padding: 0.5em 1em;
 	border: 1px solid #bababa;
-	margin: 0;
+	margin: 0 .2em 0 0;
 	text-decoration: none;
 	text-align: center;
 	text-shadow: 1px 1px 0 #fff;
-	font:11px/normal sans-serif;
+	font-size: 11px;
 	font-weight: 600;
 	color: #333;
 	white-space: nowrap;
@@ -81,18 +96,26 @@ input, textarea, td.menu a {
 	zoom: 1;
 	*display: inline;
 }
+<<<<<<< HEAD
 
 textarea {
 	white-space: pre;
 	overflow: auto;
 }
 
+=======
+textarea {
+	white-space: pre-wrap;
+	overflow: auto;
+	word-wrap: normal;
+}
+>>>>>>> 9d40dc7abf69001dac0b0e63b1bd522b5c49370a
 input:hover,
 input:focus,
 input:active,
-td.menu a:hover,
-td.menu a:focus,
-td.menu a:active,
+.main-menu ul li a:hover,
+.main-menu ul li a:focus,
+.main-menu ul li a:active,
 select:hover {
 	border-color: #3072b3;
 	border-bottom-color: #2a65a0;
@@ -107,7 +130,7 @@ select:hover {
 }
 
 input:active,
-td.menu a:active {
+.main-menu ul li a:active {
 	opacity: 1.0;
 	filter:alpha(opacity=100); /* For IE8 and earlier */
 	border-color: #2a65a0;

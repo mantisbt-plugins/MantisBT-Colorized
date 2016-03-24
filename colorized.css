@@ -4,17 +4,31 @@
  * Contact: frank@bueltge.de
  * URL:     https://github.com/bueltge/MantisBT-Colorized
  * 
- * Description: Alternative colorized style for the Manits Bugtracker
+ * Description: Alternative colorized style for the Manits Bugtracker, Version >= 1.3*
  * 
+<<<<<<< HEAD
  * @since   2009/02
  * @version 2016/03/02
  * @author  fb
+=======
+ * @since   2009-04
+ * @version 2016-03-16
+ * @author  Frank Bültge <frank@bueltge.de>
+>>>>>>> 9d40dc7abf69001dac0b0e63b1bd522b5c49370a
  */
+
+/**
+ * @section Import default MantisBT default
+ * Currently only for development for MantisBT 1.3*
+ */
+@import url( 'default.css' );
 
 /**
  * @section  Import of Stylesheets (also google fonts)
  */
-@import url( 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' );
+/*@import url( 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' );*/
+/* Use local Open Sans */
+@import url( 'open-sans.css' );
 @import url( 'buttons.css' );
 
 body { font: 400 17px/1.6 "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif; }
@@ -52,11 +66,13 @@ table.width75{ width: 75%;  border: solid 1px #e9e9e9; }
 table.width60{ width: 60%;  border: solid 1px #e9e9e9; }
 table.width50{ width: 50%;  border: solid 1px #e9e9e9; }
 
+th.category, td.category { background-color: #cccccc; }
+
 td { color: #484848; font-size: 10pt; padding: 4px; text-align: left; }
 td.center { text-align: center; }
 td.left { text-align: left; }
 td.right { text-align: right; }
-td.category { background-color: #cccccc; color: #484848; font-weight: 600; vertical-align: top; }
+td.category { color: #484848; font-weight: 600; vertical-align: top; }
 td.overdue { background-color: #CE4027; color: #f4f5ef; }
 
 td.col-1{ background-color: #d8d8d8; color: #42484b; }
@@ -117,6 +133,9 @@ div.border { background-color: #f4f5ef; border: solid 1px #000000; text-align: c
 
 div.quick-summary-left { width: 49%; padding: 2px; text-align: left;  float: left; }
 div.quick-summary-right { width: 49%; padding: 2px; text-align: right; float: right; }
+
+div.important-msg { color: #AB3521; border-color: #AB3521; }
+div.form-container fieldset.has-required:after { color: #AB3521 !important; }
 
 .center { text-align: center; }
 .left { text-align: left; }
@@ -197,4 +216,8 @@ div.quick-summary-right { width: 49%; padding: 2px; text-align: right; float: ri
 #history_closed.hidden { -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); }
 
 code { font: 13px/19px Consolas, Menlo, "Liberation Mono", Courier, monospace; text-shadow: none; color: #444; background-color: #F8F8F8; border: 1px solid #ccc; padding: .4em; }
+<<<<<<< HEAD
 pre code { display:block; }
+=======
+pre code { display:block; }
+>>>>>>> 9d40dc7abf69001dac0b0e63b1bd522b5c49370a
